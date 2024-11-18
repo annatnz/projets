@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+
+table {
+    background-color: #f1d7ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+
+th {
+    background-color: #e8e8e8;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+
+#calculateButton {
+    background-color: #f82d97;
+    color: white;
+}
+
+#calculateButton:hover {
+    background-color: #ff5ba8; /* Couleur éclaircie pour le survol */
+}
+
+#resetButton {
+    background-color: #ff0571;
+    color: white;
+}
+
+#resetButton:hover {
+    background-color: #ff4a8e; /* Couleur éclaircie pour le survol */
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #6c63ff;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

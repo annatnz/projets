@@ -1,0 +1,29 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid pink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    background-color: pink;
+    border-bottom: 1px solid pink; 
+   
+}
+
+td {
+    background-color: #f0f0f0;
+}
+
+tr:hover {
+    background-color: #eaeaea;
+}
+td:hover {
+    background-color: #cce5ff ; 
+    transform: scale(1.10); 
+}

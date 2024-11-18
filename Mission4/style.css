@@ -1,0 +1,200 @@
+:root {
+    --primary-color:#3b7a57;
+    --secondary-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #3b7a57;
+    --border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: rgb(23, 16, 16);
+    border-radius: var(--border-radius);
+}
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+form {
+    margin: 20px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+form input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+form table tr td {
+    padding: 10px;
+}
+
+.carte {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.carte h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.carte h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.carte p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.carte ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carte ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.carte ul li a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.carte ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.carte ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    form, .carte {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 5px solid pink;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}

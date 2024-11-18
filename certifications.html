@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP</title>
+    <style>
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+   
+    
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#f9e1e8;
+
+}
+
+
+.main-header {
+    background-color: #f06292;
+    color: white;
+    width: 100%; 
+    text-align: center;
+    padding: 60px 0; 
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.main-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.table-container {
+    margin-top: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.table {
+    border: 3px solid #f06292;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #ffffff;
+}
+
+.table-row {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #f06292;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.table-row:hover {
+    background-color: #f9e1e8; 
+}
+
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+}
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <h1>CERTIFICATIONS</h1>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <div class="table-container">
+        <div class="table">
+            <div class="table-row"><a href="Mission3/index.html">Certification CNIL RGPD</a></div>
+            <div class="table-row">Certification MOOC ANSSI Cybersécurité</div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <a href="index.html">Retour à l'accueil</a>
+    </footer>
+</body>
+</html>
