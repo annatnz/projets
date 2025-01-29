@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Corrigé du Quiz</title>
+   
+    <script>
+        window.onload = function() {
+            const reponsesCorrectes = {
+                q1: "B",
+                q2: "C",
+                q3: "A",
+                q4: "C",
+                q5: "B",
+                q6: "C",
+                q7: "A",
+                q8: "B",
+                q9: "A",
+                q10: "B"
+            };
+
+            let correctionHTML = "<h2>Corrigé du Quiz</h2><ul>";
+            for (let question in reponsesCorrectes) {
+                correctionHTML += `<li>Question ${question.replace('q', '')} : <span class="correct-answer">${reponsesCorrectes[question]}</span></li>`;
+            }
+            correctionHTML += "</ul>";
+
+            document.getElementById('correctionContainer').innerHTML = correctionHTML;
+        };
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="correctionContainer"></div>
+        <button onclick="window.close()">Fermer la fenêtre</button>
+    </div>
+</body>
+</html>

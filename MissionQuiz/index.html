@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz League of Legends & Karmine Corp</title>
+
+    <style>
+       body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: auto;
+    background: #2a2a40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #4da6ff;
+}
+
+.question {
+    background: #383854;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background: #4da6ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #377acc;
+}
+
+#score, #correction {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffcc00;
+}
+    </style>
+
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quiz League of Legends & Karmine Corp</h2>
+        <form id="quizForm">
+            <div class="question" id="q1">
+                <p>1. Quel est le champion emblématique de Rekkles ?</p>
+                <label><input type="radio" name="q1" value="A"> Jhin</label>
+                <label><input type="radio" name="q1" value="B"> Tristana</label>
+                <label><input type="radio" name="q1" value="C"> Vayne</label>
+                <label><input type="radio" name="q1" value="D"> Sivir</label>
+            </div>
+            
+            <div class="question" id="q2">
+                <p>2. En quelle année la Karmine Corp a-t-elle remporté son premier EUM ?</p>
+                <label><input type="radio" name="q2" value="A"> 2019</label>
+                <label><input type="radio" name="q2" value="B"> 2020</label>
+                <label><input type="radio" name="q2" value="C"> 2021</label>
+                <label><input type="radio" name="q2" value="D"> 2022</label>
+            </div>
+
+            <div class="question" id="q3">
+                <p>3. Qui est le fondateur de la Karmine Corp ?</p>
+                <label><input type="radio" name="q3" value="A"> Kameto</label>
+                <label><input type="radio" name="q3" value="B"> Nisqy</label>
+                <label><input type="radio" name="q3" value="C"> Saken</label>
+                <label><input type="radio" name="q3" value="D"> Rekkles</label>
+            </div>
+            
+            <div class="question" id="q4">
+                <p>4. Quel rôle joue Targamas dans l'équipe actuellement ?</p>
+                <label><input type="radio" name="q4" value="A"> Mid</label>
+                <label><input type="radio" name="q4" value="B"> Jungle</label>
+                <label><input type="radio" name="q4" value="C"> Support</label>
+                <label><input type="radio" name="q4" value="D"> ADC</label>
+            </div>
+            
+            <div class="question" id="q5">
+                <p>5. Quelle équipe a remporté les Worlds 2023 ?</p>
+                <label><input type="radio" name="q5" value="A"> T1</label>
+                <label><input type="radio" name="q5" value="B"> JDG</label>
+                <label><input type="radio" name="q5" value="C"> Gen.G</label>
+                <label><input type="radio" name="q5" value="D"> DRX</label>
+            </div>
+            
+            <div class="question" id="q6">
+                <p>6. Quel champion possède le plus de skins dans League of Legends ?</p>
+                <label><input type="radio" name="q6" value="A"> Jhin</label>
+                <label><input type="radio" name="q6" value="B"> Ahri</label>
+                <label><input type="radio" name="q6" value="C"> Lux</label>
+                <label><input type="radio" name="q6" value="D"> Miss Fortune</label>
+            </div>
+            
+            <div class="question" id="q7">
+                <p>7. Qui est le midlaner actuel de Karmine Corp ?</p>
+                <label><input type="radio" name="q7" value="A"> Vladi</label>
+                <label><input type="radio" name="q7" value="B"> Saken</label>
+                <label><input type="radio" name="q7" value="C"> Nisqy</label>
+                <label><input type="radio" name="q7" value="D"> Caps</label>
+            </div>
+            
+            <div class="question" id="q8">
+                <p>8. Quel événement annuel détermine le champion du monde ?</p>
+                <label><input type="radio" name="q8" value="A"> MSI</label>
+                <label><input type="radio" name="q8" value="B"> Worlds</label>
+                <label><input type="radio" name="q8" value="C"> LEC</label>
+                <label><input type="radio" name="q8" value="D"> LCS</label>
+            </div>
+            
+            <div class="question" id="q9">
+                <p>9. Quel joueur a le plus de titres de champion du monde ?</p>
+                <label><input type="radio" name="q9" value="A"> Faker</label>
+                <label><input type="radio" name="q9" value="B"> Uzi</label>
+                <label><input type="radio" name="q9" value="C"> Rekkles</label>
+                <label><input type="radio" name="q9" value="D"> Perkz</label>
+            </div>
+            
+            <div class="question" id="q10">
+                <p>10. Quelle est la couleur emblématique de la Karmine Corp ?</p>
+                <label><input type="radio" name="q10" value="A"> Rouge</label>
+                <label><input type="radio" name="q10" value="B"> Bleu</label>
+                <label><input type="radio" name="q10" value="C"> Vert</label>
+                <label><input type="radio" name="q10" value="D"> Jaune</label>
+            </div>
+            
+            <div class="buttons">
+                <button type="button" onclick="corriger()">Correction</button>
+                <button type="button" onclick="afficherReponses()">Corrigé</button>
+                <button type="button" onclick="resetForm()">Effacer</button>
+            </div>
+        </form>
+        <p id="score"></p>
+        <p id="correction"></p>
+    </div>
+    
+    <script>
+        const reponsesCorrectes = {
+            q1: "B",
+            q2: "C",
+            q3: "A",
+            q4: "C",
+            q5: "B",
+            q6: "C",
+            q7: "A",
+            q8: "B",
+            q9: "A",
+            q10: "B"
+        };
+
+        function corriger() {
+            let score = 0;
+            let total = Object.keys(reponsesCorrectes).length;
+            let form = document.getElementById('quizForm');
+            
+            for (let question in reponsesCorrectes) {
+                let selected = form[question].value;
+                if (selected === reponsesCorrectes[question]) {
+                    score++;
+                }
+            }
+            document.getElementById('score').innerText = `Score : ${score}/${total}`;
+        }
+
+        function afficherReponses() {
+            let correction = "<h3>Réponses Correctes :</h3><ul>";
+            for (let question in reponsesCorrectes) {
+                correction += `<li>Question ${question.replace('q', '')} : <span class='correct'>${reponsesCorrectes[question]}</span></li>`;
+            }
+            correction += "</ul>";
+            let correctionWindow = window.open("", "_blank", "width=600,height=400");
+            correctionWindow.document.write("<html><head><title>Corrigé</title></head><body>");
+            correctionWindow.document.write(correction);
+            correctionWindow.document.write("<button onclick='window.close()'>Fermer la fenêtre</button>");
+            correctionWindow.document.write("</body></html>");
+        }
+
+        function resetForm() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('score').innerText = "";
+        }
+    </script>
+    <a href="../mission.html">Retour au sommaire🏠</a>
+</body>
+</html>
+
