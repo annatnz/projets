@@ -1,0 +1,72 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ff69b4;
+    text-align: center;
+    background-color: #ffe4e1;
+}
+
+
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 182, 193, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff1493;
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffccff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ff69b4;
+    text-align: left;
+    color: #d147a3;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ffb6c1;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+.code-box {
+    background-color: #ffc0cb;
+    color: #800080;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: monospace;
+    margin-top: 10px;
+    display: none;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(255, 182, 193, 0.5);
+}

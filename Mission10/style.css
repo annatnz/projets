@@ -1,0 +1,93 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe4e1;
+    color: #ff69b4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.facture-container {
+    background: #ffccff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+    display: inline-block;
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+}
+
+.facture-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffb6c1;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.facture-infos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.facture-infos div {
+    width: 48%;
+}
+
+.facture-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ff69b4;
+    text-align: center;
+}
+
+th {
+    background-color: #ff1493;
+    color: white;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.facture-total {
+    background: #ffccff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(255, 182, 193, 0.5);
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    text-align: center;
+}
